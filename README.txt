@@ -1,3 +1,15 @@
+#NovaTech Store 
+A modular and scalable E-Commerce Backend and Frontend system built with Python, JSON persistence, and modern UI.
+#Project Architecture
+- **Backend Core:** Pure Python (Layered Architecture - Managers & Services)
+- **Data Persistence:** Local JSON Storage (`products.json`, `carts.json`, `users.json`)
+- **Frontend:** HTML, CSS, JavaScript
+---
+# How to Run and Test the Project Locally
+1. **Clone or Download the Repository:**
+   ```bash
+   git clone [https://github.com/Maram-Anwar/NovaTech-Store-](https://github.com/Maram-Anwar/NovaTech-Store-)[NovaTech Store].git
+
 NOVA TECH STORE - DYNAMIC FULL STACK STORE
 ===========================================
 
