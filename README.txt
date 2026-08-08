@@ -7,8 +7,6 @@ Python backend and JSON persistence. It does not use frontend-only mock data.
 READY TEST LOGINS
 -----------------
 User 1: user@store.com / test1234
-User 2: maramanwar1026@gmail.com / 123456789
-User 3: shimaauni422@gmail.com / 1234567
 Admin : admin@gmail.com / 1234567
 
 See TEST_ACCOUNTS.txt for balances and details.
