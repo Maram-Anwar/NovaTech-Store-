@@ -1,0 +1,812 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 250.0,
+        "quantity": 3,
+        "brand": "Nova",
+        "description": "Compact everyday laptop for study, browsing and office work.",
+        "rating": 4.6,
+        "badge": "Popular",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/10655906/pexels-photo-10655906.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-laptop-on-a-white-background-10655906/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Laptop"
+            },
+            {
+                "path": "images/products/01-laptop.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Laptop"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Headphones",
+        "category": "Electronics",
+        "price": 80.0,
+        "quantity": 10,
+        "brand": "Nova",
+        "description": "Wireless over-ear headphones with cushioned ear cups and long battery life.",
+        "rating": 4.7,
+        "badge": "Best seller",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/15840650/pexels-photo-15840650.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/black-wireless-headphones-15840650/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Headphones"
+            },
+            {
+                "path": "images/products/02-headphones.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Headphones"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Backpack",
+        "category": "Accessories",
+        "price": 60.0,
+        "quantity": 8,
+        "brand": "Nova",
+        "description": "Padded tech backpack with dedicated laptop and accessory compartments.",
+        "rating": 4.5,
+        "badge": "Everyday",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/3731256/pexels-photo-3731256.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/person-holding-black-backpack-3731256/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Backpack"
+            },
+            {
+                "path": "images/products/03-backpack.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Backpack"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "NovaBook Pro 15",
+        "category": "Laptops",
+        "price": 720.0,
+        "quantity": 6,
+        "brand": "Nova",
+        "description": "Performance laptop with a 15-inch display for creative and development workflows.",
+        "rating": 4.9,
+        "badge": "Pro pick",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/8004044/pexels-photo-8004044.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/a-macbook-pro-laptop-on-white-table-8004044/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing NovaBook Pro 15"
+            },
+            {
+                "path": "images/products/04-novabook-pro-15.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for NovaBook Pro 15"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "NovaBook Flex 13",
+        "category": "Laptops",
+        "price": 540.0,
+        "quantity": 3,
+        "brand": "Nova",
+        "description": "Lightweight 2-in-1 laptop for note taking, classes and travel.",
+        "rating": 4.7,
+        "badge": "New",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/11982694/pexels-photo-11982694.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/switched-off-laptop-on-white-background-11982694/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing NovaBook Flex 13"
+            },
+            {
+                "path": "images/products/05-novabook-flex-13.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for NovaBook Flex 13"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Nova Mini PC X1",
+        "category": "Computers",
+        "price": 430.0,
+        "quantity": 7,
+        "brand": "Nova",
+        "description": "Compact desktop PC built for clean workspaces and everyday productivity.",
+        "rating": 4.6,
+        "badge": "Compact",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/36065602/pexels-photo-36065602.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/compact-desktop-computer-with-usb-c-and-ports-36065602/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Mini PC X1"
+            },
+            {
+                "path": "images/products/06-nova-mini-pc-x1.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Mini PC X1"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Nova Vision 24 Monitor",
+        "category": "Monitors",
+        "price": 190.0,
+        "quantity": 12,
+        "brand": "Nova",
+        "description": "24-inch Full HD monitor with slim bezels for study and office setups.",
+        "rating": 4.6,
+        "badge": "Value",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/21325135/pexels-photo-21325135.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/computer-monitor-on-a-desk-in-an-office-21325135/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Vision 24 Monitor"
+            },
+            {
+                "path": "images/products/07-nova-vision-24-monitor.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Vision 24 Monitor"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Nova Vision 27 QHD",
+        "category": "Monitors",
+        "price": 330.0,
+        "quantity": 5,
+        "brand": "Nova",
+        "description": "27-inch QHD display with extra workspace for design and multitasking.",
+        "rating": 4.8,
+        "badge": "Creator",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/19053211/pexels-photo-19053211.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/computer-monitor-on-a-desk-19053211/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Vision 27 QHD"
+            },
+            {
+                "path": "images/products/08-nova-vision-27-qhd.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Vision 27 QHD"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Nova Pulse Buds",
+        "category": "Audio",
+        "price": 95.0,
+        "quantity": 16,
+        "brand": "Nova",
+        "description": "Pocket-size wireless earbuds with touch controls and charging case.",
+        "rating": 4.5,
+        "badge": "Trending",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/35599935/pexels-photo-35599935.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/close-up-of-wireless-earbuds-in-carrying-case-35599935/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Pulse Buds"
+            },
+            {
+                "path": "images/products/09-nova-pulse-buds.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Pulse Buds"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Nova SoundBar Mini",
+        "category": "Audio",
+        "price": 120.0,
+        "quantity": 9,
+        "brand": "Nova",
+        "description": "Desktop soundbar with clear stereo audio for compact setups.",
+        "rating": 4.4,
+        "badge": "Desk pick",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/13378811/pexels-photo-13378811.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/black-speakers-in-close-up-shot-13378811/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova SoundBar Mini"
+            },
+            {
+                "path": "images/products/10-nova-soundbar-mini.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova SoundBar Mini"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Nova Wave Speaker",
+        "category": "Audio",
+        "price": 145.0,
+        "quantity": 6,
+        "brand": "Nova",
+        "description": "Portable Bluetooth speaker with balanced sound and durable shell.",
+        "rating": 4.6,
+        "badge": "Portable",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/5511714/pexels-photo-5511714.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/bluetooth-speaker-5511714/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Wave Speaker"
+            },
+            {
+                "path": "images/products/11-nova-wave-speaker.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Wave Speaker"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Nova Type Mechanical Keyboard",
+        "category": "Keyboards",
+        "price": 110.0,
+        "quantity": 14,
+        "brand": "Nova",
+        "description": "Mechanical keyboard with tactile switches and programmable lighting.",
+        "rating": 4.8,
+        "badge": "Gaming",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/7047246/pexels-photo-7047246.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/a-person-using-a-computer-keyboard-7047246/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Type Mechanical Keyboard"
+            },
+            {
+                "path": "images/products/12-nova-type-mechanical-keyboard.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Type Mechanical Keyboard"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Nova Type Mini 75",
+        "category": "Keyboards",
+        "price": 92.0,
+        "quantity": 11,
+        "brand": "Nova",
+        "description": "75% compact keyboard that keeps function keys while saving desk space.",
+        "rating": 4.7,
+        "badge": "Compact",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/12316450/pexels-photo-12316450.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/photo-of-a-keyboard-12316450/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Type Mini 75"
+            },
+            {
+                "path": "images/products/13-nova-type-mini-75.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Type Mini 75"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Nova Glide Wireless Mouse",
+        "category": "Accessories",
+        "price": 48.0,
+        "quantity": 20,
+        "brand": "Nova",
+        "description": "Ergonomic wireless mouse with adjustable sensitivity and silent clicks.",
+        "rating": 4.5,
+        "badge": "Popular",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/13870516/pexels-photo-13870516.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/photograph-of-a-black-wireless-mouse-13870516/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Glide Wireless Mouse"
+            },
+            {
+                "path": "images/products/14-nova-glide-wireless-mouse.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Glide Wireless Mouse"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Nova Dock 8-in-1",
+        "category": "Accessories",
+        "price": 75.0,
+        "quantity": 13,
+        "brand": "Nova",
+        "description": "USB-C hub with HDMI, USB, card reader and power delivery support.",
+        "rating": 4.7,
+        "badge": "Useful",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/4195406/pexels-photo-4195406.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/usb-hub-type-c-dock-adapter-4195406/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Dock 8-in-1"
+            },
+            {
+                "path": "images/products/15-nova-dock-8-in-1.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Dock 8-in-1"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Nova Sleeve 14",
+        "category": "Accessories",
+        "price": 35.0,
+        "quantity": 18,
+        "brand": "Nova",
+        "description": "Soft protective laptop sleeve with water-resistant exterior.",
+        "rating": 4.4,
+        "badge": "Simple",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/7742558/pexels-photo-7742558.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/leather-laptop-sleeves-7742558/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Sleeve 14"
+            },
+            {
+                "path": "images/products/16-nova-sleeve-14.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Sleeve 14"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Nova GamePad X",
+        "category": "Gaming",
+        "price": 68.0,
+        "quantity": 15,
+        "brand": "Nova",
+        "description": "Wireless controller with dual vibration and PC compatibility.",
+        "rating": 4.6,
+        "badge": "Gaming",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/19115782/pexels-photo-19115782.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/person-holding-a-sony-dualsense-video-game-controller-19115782/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova GamePad X"
+            },
+            {
+                "path": "images/products/17-nova-gamepad-x.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova GamePad X"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Nova Strike Mouse",
+        "category": "Gaming",
+        "price": 58.0,
+        "quantity": 17,
+        "brand": "Nova",
+        "description": "Lightweight gaming mouse with programmable buttons and precise sensor.",
+        "rating": 4.7,
+        "badge": "Fast",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/34704932/pexels-photo-34704932.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/professional-gaming-mouse-and-rgb-computer-setup-34704932/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Strike Mouse"
+            },
+            {
+                "path": "images/products/18-nova-strike-mouse.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Strike Mouse"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Nova RGB Desk Mat",
+        "category": "Gaming",
+        "price": 42.0,
+        "quantity": 22,
+        "brand": "Nova",
+        "description": "Large desk mat with edge lighting and smooth tracking surface.",
+        "rating": 4.5,
+        "badge": "Setup",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/28779689/pexels-photo-28779689.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/rgb-gaming-keyboard-and-mouse-on-hexagon-pattern-28779689/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova RGB Desk Mat"
+            },
+            {
+                "path": "images/products/19-nova-rgb-desk-mat.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova RGB Desk Mat"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Nova Phone Lite 5G",
+        "category": "Mobile",
+        "price": 390.0,
+        "quantity": 8,
+        "brand": "Nova",
+        "description": "5G smartphone with bright display, dual camera and all-day battery.",
+        "rating": 4.6,
+        "badge": "5G",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/12882840/pexels-photo-12882840.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/smartphone-on-white-background-12882840/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Phone Lite 5G"
+            },
+            {
+                "path": "images/products/20-nova-phone-lite-5g.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Phone Lite 5G"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Nova Phone Pro 5G",
+        "category": "Mobile",
+        "price": 620.0,
+        "quantity": 5,
+        "brand": "Nova",
+        "description": "Premium 5G smartphone with upgraded camera and performance hardware.",
+        "rating": 4.8,
+        "badge": "Flagship",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/25849099/pexels-photo-25849099.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/smartphone-on-white-background-25849099/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Phone Pro 5G"
+            },
+            {
+                "path": "images/products/21-nova-phone-pro-5g.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Phone Pro 5G"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Nova Watch Active",
+        "category": "Wearables",
+        "price": 135.0,
+        "quantity": 10,
+        "brand": "Nova",
+        "description": "Fitness smartwatch with activity tracking, notifications and sleep insights.",
+        "rating": 4.5,
+        "badge": "Fitness",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/10339115/pexels-photo-10339115.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/photo-of-a-smartwatch-10339115/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Watch Active"
+            },
+            {
+                "path": "images/products/22-nova-watch-active.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Watch Active"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Nova Power 20K",
+        "category": "Power",
+        "price": 55.0,
+        "quantity": 19,
+        "brand": "Nova",
+        "description": "20,000mAh power bank with fast charging for phones and accessories.",
+        "rating": 4.7,
+        "badge": "Travel",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/3921704/pexels-photo-3921704.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/photo-of-black-power-bank-3921704/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Power 20K"
+            },
+            {
+                "path": "images/products/23-nova-power-20k.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Power 20K"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Nova GaN Charger 65W",
+        "category": "Power",
+        "price": 49.0,
+        "quantity": 24,
+        "brand": "Nova",
+        "description": "Compact 65W USB-C charger for laptops, tablets and phones.",
+        "rating": 4.8,
+        "badge": "Essential",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/20360345/pexels-photo-20360345.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/a-white-charger-with-a-plug-on-it-20360345/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova GaN Charger 65W"
+            },
+            {
+                "path": "images/products/24-nova-gan-charger-65w.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova GaN Charger 65W"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Nova SSD 1TB",
+        "category": "Storage",
+        "price": 105.0,
+        "quantity": 13,
+        "brand": "Nova",
+        "description": "Portable solid-state drive for fast backups and project files.",
+        "rating": 4.8,
+        "badge": "Fast storage",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/5222605/pexels-photo-5222605.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/solid-state-drive-m-2-5222605/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova SSD 1TB"
+            },
+            {
+                "path": "images/products/25-nova-ssd-1tb.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova SSD 1TB"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Nova USB Drive 128GB",
+        "category": "Storage",
+        "price": 24.0,
+        "quantity": 30,
+        "brand": "Nova",
+        "description": "Compact USB flash drive for documents, media and quick file transfer.",
+        "rating": 4.4,
+        "badge": "Budget",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/10336136/pexels-photo-10336136.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-an-otg-flash-drive-10336136/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova USB Drive 128GB"
+            },
+            {
+                "path": "images/products/26-nova-usb-drive-128gb.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova USB Drive 128GB"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Nova Wi-Fi 6 Router",
+        "category": "Networking",
+        "price": 125.0,
+        "quantity": 9,
+        "brand": "Nova",
+        "description": "Dual-band Wi-Fi 6 router for faster home coverage and more devices.",
+        "rating": 4.6,
+        "badge": "Connected",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/28348054/pexels-photo-28348054.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/smart-home-wireless-network-router-device-28348054/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Wi-Fi 6 Router"
+            },
+            {
+                "path": "images/products/27-nova-wi-fi-6-router.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Wi-Fi 6 Router"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Nova Mesh Node",
+        "category": "Networking",
+        "price": 89.0,
+        "quantity": 7,
+        "brand": "Nova",
+        "description": "Mesh Wi-Fi expansion node for stronger coverage across larger spaces.",
+        "rating": 4.5,
+        "badge": "Coverage",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/13660566/pexels-photo-13660566.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/close-up-photo-of-a-smart-speaker-13660566/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Mesh Node"
+            },
+            {
+                "path": "images/products/28-nova-mesh-node.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Mesh Node"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Nova Smart Lamp",
+        "category": "Smart Home",
+        "price": 65.0,
+        "quantity": 12,
+        "brand": "Nova",
+        "description": "App-controlled desk lamp with adjustable brightness and color temperature.",
+        "rating": 4.5,
+        "badge": "Smart",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/31726764/pexels-photo-31726764.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/modern-workspace-with-desk-lamp-and-monitor-31726764/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Smart Lamp"
+            },
+            {
+                "path": "images/products/29-nova-smart-lamp.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Smart Lamp"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Nova Smart Plug Duo",
+        "category": "Smart Home",
+        "price": 38.0,
+        "quantity": 21,
+        "brand": "Nova",
+        "description": "Two-pack smart plugs with schedules and remote on/off control.",
+        "rating": 4.4,
+        "badge": "Automation",
+        "images": [
+            {
+                "url": "https://images.pexels.com/photos/4148576/pexels-photo-4148576.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900&dpr=1",
+                "source_url": "https://www.pexels.com/photo/smart-plug-electric-socket-4148576/",
+                "provider": "Pexels",
+                "is_main": true,
+                "position": 1,
+                "alt_text": "Real product photo representing Nova Smart Plug Duo"
+            },
+            {
+                "path": "images/products/30-nova-smart-plug-duo.svg",
+                "is_main": false,
+                "position": 99,
+                "alt_text": "Fallback illustration for Nova Smart Plug Duo"
+            }
+        ]
+    }
+]

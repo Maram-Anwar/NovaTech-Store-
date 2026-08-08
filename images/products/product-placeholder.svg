@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t d">
+<title id="t">Product image</title><desc id="d">Generic product placeholder</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e2e8f0"/></linearGradient></defs>
+<rect width="1200" height="800" rx="64" fill="url(#bg)"/>
+<rect x="330" y="205" width="540" height="390" rx="55" fill="#fff" stroke="#cbd5e1" stroke-width="14"/>
+<circle cx="475" cy="345" r="55" fill="#cbd5e1"/>
+<path d="M375 535 520 405l105 95 78-70 122 105H375Z" fill="#94a3b8"/>
+<text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#64748b">PRODUCT IMAGE</text>
+</svg>

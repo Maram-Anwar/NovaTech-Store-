@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Nova Tech Store - modern electronics shopping powered by a Python backend.">
+  <title>Nova Tech Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <button class="brand" data-view="products" aria-label="Nova Tech Store home">
+        <span class="brand-mark">N</span>
+        <span class="brand-copy">Nova <b>Tech Store</b></span>
+      </button>
+
+      <nav id="mainNav" class="nav hidden" aria-label="Main navigation">
+        <button data-view="products" class="nav-link active">Store</button>
+        <button data-view="cart" class="nav-link user-only">Cart <span id="cartBadge" class="badge">0</span></button>
+        <button data-view="profile" class="nav-link user-only">Account</button>
+        <button data-view="admin" class="nav-link admin-only hidden">Dashboard</button>
+      </nav>
+
+      <div id="accountArea" class="account-area hidden">
+        <div class="account-copy">
+          <strong id="accountName">Account</strong>
+          <span id="accountRole">User</span>
+        </div>
+        <button id="logoutBtn" class="btn btn-ghost btn-compact">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="storeTicker" class="store-ticker hidden">
+    <div class="ticker-track">
+      <span>Curated tech catalog</span><i>◆</i><span>Cart saved to your account</span><i>◆</i><span>Wallet checkout updates stock instantly</span><i>◆</i><span>Nova Tech Store · built for real data</span>
+    </div>
+  </div>
+
+  <main class="shell main">
+    <!-- AUTH -->
+    <section id="authView" class="view auth-view active">
+      <div class="auth-hero reveal">
+        <div class="status-chip"><span class="status-dot"></span> Live inventory · Secure checkout</div>
+        <p class="eyebrow">NOVA TECH STORE</p>
+        <h1>Upgrade your setup.<br><span>Shop smarter.</span></h1>
+        <p class="hero-copy">Discover everyday tech essentials, build your cart, and checkout quickly with your Nova wallet.</p>
+
+        <div class="feature-strip">
+          <div class="feature"><span>01</span><strong>Live inventory</strong><small>Stock updates after checkout</small></div>
+          <div class="feature"><span>02</span><strong>Saved cart</strong><small>Your picks stay with your account</small></div>
+          <div class="feature"><span>03</span><strong>Verified access</strong><small>Email verification for new accounts</small></div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbital orbital-a"></div>
+          <div class="orbital orbital-b"></div>
+          <div class="device-card device-main">
+            <span class="device-label">NOVA</span>
+            <div class="device-screen"><div class="screen-glow"></div></div>
+            <div class="device-base"></div>
+          </div>
+          <div class="floating-card floating-card-a"><span>Fast</span><strong>Checkout</strong></div>
+          <div class="floating-card floating-card-b"><span>Real-time</span><strong>Stock</strong></div>
+        </div>
+      </div>
+
+      <div class="auth-card card reveal reveal-delay">
+        <div class="auth-heading">
+          <div>
+            <p class="eyebrow">ACCOUNT ACCESS</p>
+            <h2>Welcome to Nova</h2>
+          </div>
+          <div class="secure-pill">● Secure access</div>
+        </div>
+
+        <div id="backendStatus" class="backend-status checking" role="status">
+          <div class="backend-status-main"><span class="backend-dot"></span><div><strong id="backendStatusTitle">Checking backend...</strong><small id="backendStatusText">Connecting to Nova data storage.</small></div></div>
+          <button id="retryBackendBtn" class="text-btn" type="button">Retry</button>
+        </div>
+
+        <div class="tabs">
+          <button class="tab active" data-auth-tab="login">Login</button>
+          <button class="tab" data-auth-tab="register">Register</button>
+          <button class="tab" data-auth-tab="admin-login">Admin</button>
+        </div>
+
+        <form id="loginForm" class="auth-form active" data-auth-panel="login">
+          <div class="form-intro"><h3>Welcome back</h3><p>Login to continue shopping.</p></div>
+          <label>Email address<input id="loginEmail" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>Password<input id="loginPassword" type="password" autocomplete="current-password" required placeholder="Enter your password"></label>
+          <button class="btn btn-primary wide" type="submit"><span>Login to Nova</span><span class="btn-arrow">↗</span></button>
+        </form>
+
+        <form id="registerForm" class="auth-form" data-auth-panel="register">
+          <div class="form-intro"><h3>Create your account</h3><p>We will send a 6-digit verification code to your email.</p></div>
+          <label>Username<input id="registerUsername" autocomplete="username" minlength="3" required placeholder="At least 3 characters"></label>
+          <label>Email address<input id="registerEmail" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>Password<input id="registerPassword" type="password" autocomplete="new-password" minlength="6" maxlength="12" required placeholder="6–12 characters"></label>
+          <button class="btn btn-primary wide" type="submit"><span>Create account</span><span class="btn-arrow">↗</span></button>
+        </form>
+
+        <form id="adminLoginForm" class="auth-form" data-auth-panel="admin-login">
+          <div class="form-intro"><h3>Admin portal</h3><p>Manage products, stock, users and wallet balances.</p></div>
+          <label>Admin email<input id="adminEmail" type="email" autocomplete="username" required placeholder="admin@example.com"></label>
+          <label>Password<input id="adminPassword" type="password" autocomplete="current-password" required placeholder="Admin password"></label>
+          <button class="btn btn-primary wide" type="submit"><span>Open dashboard</span><span class="btn-arrow">↗</span></button>
+        </form>
+
+        <form id="otpForm" class="auth-form" data-auth-panel="otp">
+          <div class="form-intro"><h3>Verify your email</h3><p id="otpHint">Enter the 6-digit code sent to your email.</p></div>
+          <label>Verification code<input id="otpCode" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required placeholder="000000"></label>
+          <button class="btn btn-primary wide" type="submit"><span>Verify & continue</span><span class="btn-arrow">↗</span></button>
+          <div class="inline-actions">
+            <button class="text-btn" type="button" id="resendOtpBtn">Resend code</button>
+            <button class="text-btn" type="button" id="backToRegisterBtn">Change details</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="productsView" class="view">
+      <div class="catalog-hero page-enter">
+        <div>
+          <div class="status-chip"><span class="status-dot"></span> Live catalog connected to backend</div>
+          <p class="eyebrow">NOVA TECH MARKETPLACE</p>
+          <h1>Find the tech that fits you.</h1>
+          <p>Browse a curated tech catalog with real product photography, live stock, smart filters and backend-powered cart data.</p>
+        </div>
+        <div class="catalog-metrics">
+          <div><strong id="catalogCount">0</strong><span>Showing</span></div>
+          <div><strong id="categoryCount">0</strong><span>Categories</span></div>
+          <div><strong id="stockCount">0</strong><span>Units</span></div>
+          <div id="walletPill" class="user-only hidden"><strong id="headerBalance">$0.00</strong><span>Wallet</span></div>
+        </div>
+      </div>
+
+      <section id="featuredSpotlight" class="featured-spotlight card page-enter delay-1">
+        <div class="spotlight-copy">
+          <span id="featuredBadge" class="spotlight-badge">FEATURED</span>
+          <p class="eyebrow">NOVA PICK</p>
+          <h2 id="featuredName">Loading featured product...</h2>
+          <p id="featuredDescription">The catalog is loading from your backend.</p>
+          <div class="spotlight-actions">
+            <strong id="featuredPrice">$0.00</strong>
+            <button id="featuredViewBtn" class="btn btn-primary" type="button">Quick view</button>
+          </div>
+        </div>
+        <div class="spotlight-media"><span class="photo-label">CURATED PRODUCT PHOTO</span><img id="featuredImage" src="images/products/product-placeholder.svg" alt="Featured Nova product" decoding="async"></div>
+        <div class="spotlight-orbit orbit-one"></div><div class="spotlight-orbit orbit-two"></div>
+      </section>
+
+      <div class="store-section-head page-enter delay-1">
+        <div><p class="eyebrow">SHOP BY CATEGORY</p><h2>Explore the catalog</h2></div>
+        <span id="resultsLabel">Loading products...</span>
+      </div>
+      <div id="categoryChips" class="category-chips page-enter delay-1"></div>
+
+      <div class="toolbar card page-enter delay-1">
+        <div class="search-field"><span>⌕</span><input id="productSearch" type="search" placeholder="Search name, brand, category or description..."></div>
+        <select id="categoryFilter"><option value="">All categories</option></select>
+        <select id="sortProducts" aria-label="Sort products">
+          <option value="featured">Featured first</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="rating-desc">Highest rated</option>
+          <option value="stock-desc">Most in stock</option>
+          <option value="name-asc">Name A–Z</option>
+        </select>
+        <label class="stock-toggle"><input id="inStockOnly" type="checkbox"><span>In stock only</span></label>
+        <button id="refreshProductsBtn" class="btn btn-ghost">Refresh</button>
+      </div>
+
+      <div id="productsGrid" class="products-grid"></div>
+      <div id="productsEmpty" class="empty-state hidden">
+        <div class="empty-icon">⌁</div><h3>No matching products</h3><p>Try another search, category or stock filter.</p>
+      </div>
+    </section>
+
+    <!-- CART -->
+    <section id="cartView" class="view">
+      <div class="page-head page-enter">
+        <div><p class="eyebrow">YOUR SELECTION</p><h1>Shopping Cart</h1><p>Review quantities before completing checkout.</p></div>
+        <button id="clearCartBtn" class="btn btn-ghost danger-text">Clear cart</button>
+      </div>
+      <div class="two-col cart-layout page-enter delay-1">
+        <div id="cartItems" class="stack"></div>
+        <aside class="card summary-card">
+          <p class="eyebrow">ORDER SUMMARY</p>
+          <h2>Ready to checkout?</h2>
+          <div class="summary-line"><span>Items</span><strong id="summaryCount">0</strong></div>
+          <div class="summary-line"><span>Wallet balance</span><strong id="cartBalance">$0.00</strong></div>
+          <div class="summary-line total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+          <button id="checkoutBtn" class="btn btn-primary wide">Complete checkout</button>
+          <small>Checkout validates stock, deducts your wallet balance, updates product stock and clears your cart.</small>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profileView" class="view">
+      <div class="page-head page-enter"><div><p class="eyebrow">YOUR NOVA ACCOUNT</p><h1>Profile</h1><p>Manage your account details and security.</p></div></div>
+      <div class="profile-grid page-enter delay-1">
+        <article class="card profile-overview">
+          <div class="profile-top"><div id="profileAvatar" class="avatar">N</div><div><span class="profile-kicker">CUSTOMER</span><h2 id="profileName">-</h2><p id="profileEmail">-</p></div></div>
+          <div class="metric"><span>Available wallet balance</span><strong id="profileBalance">$0.00</strong></div>
+        </article>
+        <article class="card settings-card">
+          <p class="eyebrow">IDENTITY</p><h2>Change username</h2>
+          <form id="usernameForm" class="form-grid single">
+            <label>New username<input id="newUsername" minlength="3" required placeholder="New username"></label>
+            <button class="btn btn-primary" type="submit">Update username</button>
+          </form>
+        </article>
+        <article class="card settings-card">
+          <p class="eyebrow">SECURITY</p><h2>Change password</h2>
+          <form id="passwordForm" class="form-grid single">
+            <label>Current password<input id="oldPassword" type="password" autocomplete="current-password" required></label>
+            <label>New password<input id="newPassword" type="password" autocomplete="new-password" minlength="7" required placeholder="More than 6 characters"></label>
+            <button class="btn btn-primary" type="submit">Change password</button>
+          </form>
+        </article>
+        <article class="card danger-card">
+          <p class="eyebrow">DANGER ZONE</p><h2>Delete account</h2><p>This permanently removes your account and cart data.</p>
+          <form id="deleteAccountForm" class="form-grid single">
+            <label>Confirm password<input id="deletePassword" type="password" required></label>
+            <button class="btn btn-danger" type="submit">Delete my account</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- ADMIN -->
+    <section id="adminView" class="view">
+      <div class="page-head page-enter"><div><p class="eyebrow">NOVA CONTROL CENTER</p><h1>Admin Dashboard</h1><p>Live inventory, customers and wallet management from the same JSON-backed backend.</p></div><button id="adminRefreshBtn" class="btn btn-ghost">Refresh data</button></div>
+      <div id="statsGrid" class="stats-grid page-enter delay-1"></div>
+      <div id="adminInsights" class="admin-insights page-enter delay-1"></div>
+
+      <div class="admin-grid page-enter delay-2">
+        <article class="card">
+          <p class="eyebrow">CATALOG</p><h2>Add product</h2>
+          <form id="addProductForm" class="form-grid">
+            <label>Name<input id="addName" required placeholder="Product name"></label>
+            <label>Category<input id="addCategory" required placeholder="e.g. Gaming"></label>
+            <label>Brand<input id="addBrand" value="Nova" placeholder="Brand"></label>
+            <label>Badge<input id="addBadge" value="New" placeholder="e.g. New"></label>
+            <label>Price<input id="addPrice" type="number" min="0.01" step="0.01" required></label>
+            <label>Quantity<input id="addQuantity" type="number" min="0" step="1" required></label>
+            <label>Rating<input id="addRating" type="number" min="0" max="5" step="0.1" value="4.5"></label>
+            <label class="full">Description<textarea id="addDescription" rows="3" placeholder="Short product description"></textarea></label>
+            <label class="full">Main image<input id="addImage" type="file" accept="image/*"></label>
+            <button class="btn btn-primary full" type="submit">Add product</button>
+          </form>
+        </article>
+
+        <article class="card">
+          <p class="eyebrow">CUSTOMER WALLET</p><h2>Add balance</h2>
+          <form id="addBalanceForm" class="form-grid single">
+            <label>Username<input id="balanceUsername" required placeholder="Customer username"></label>
+            <label>Amount<input id="balanceAmount" type="number" min="0.01" step="0.01" required></label>
+            <button class="btn btn-primary" type="submit">Add balance</button>
+          </form>
+          <div class="admin-note"><strong>Tip</strong><span>Use the customer table below to select a username instantly.</span></div>
+        </article>
+      </div>
+
+      <article class="card admin-table-card page-enter delay-2">
+        <div class="card-title-row"><div><p class="eyebrow">INVENTORY</p><h2>All products</h2></div><div class="mini-search"><input id="adminProductSearch" type="search" placeholder="Filter products..."></div></div>
+        <div class="table-wrap"><table><thead><tr><th>ID</th><th>Product</th><th>Category</th><th>Price</th><th>Rating</th><th>Stock</th><th>Actions</th></tr></thead><tbody id="adminProductsBody"></tbody></table></div>
+      </article>
+
+      <article class="card admin-table-card page-enter delay-2">
+        <div class="card-title-row"><div><p class="eyebrow">CUSTOMERS</p><h2>Registered users</h2></div><div class="mini-search"><input id="adminUserSearch" type="search" placeholder="Filter users..."></div></div>
+        <div class="table-wrap"><table><thead><tr><th>Username</th><th>Email</th><th>Balance</th><th>Wallet</th></tr></thead><tbody id="adminUsersBody"></tbody></table></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner"><span>Nova Tech Store</span><small>Technology for work, study and everyday life.</small></div>
+  </footer>
+
+  <div id="editModal" class="modal hidden" aria-modal="true" role="dialog">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel card">
+      <div class="card-title-row"><div><p class="eyebrow">EDIT PRODUCT</p><h2 id="editTitle">Product</h2></div><button class="icon-btn" data-close-modal aria-label="Close">×</button></div>
+      <form id="editProductForm" class="form-grid">
+        <input id="editProductId" type="hidden">
+        <label>Name<input id="editName" required></label>
+        <label>Category<input id="editCategory" required></label>
+        <label>Brand<input id="editBrand"></label>
+        <label>Badge<input id="editBadge"></label>
+        <label>Price<input id="editPrice" type="number" min="0.01" step="0.01" required></label>
+        <label>Quantity<input id="editQuantity" type="number" min="0" step="1" required></label>
+        <label>Rating<input id="editRating" type="number" min="0" max="5" step="0.1"></label>
+        <label class="full">Description<textarea id="editDescription" rows="3"></textarea></label>
+        <label class="full">Replace main image<input id="editImage" type="file" accept="image/*"></label>
+        <div class="modal-actions full"><button class="btn btn-ghost" type="button" data-close-modal>Cancel</button><button class="btn btn-primary" type="submit">Save changes</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="quickViewModal" class="modal hidden" aria-modal="true" role="dialog">
+    <div class="modal-backdrop" data-close-quick></div>
+    <div class="modal-panel quick-panel card">
+      <button class="icon-btn quick-close" data-close-quick aria-label="Close">×</button>
+      <div class="quick-grid">
+        <div class="quick-media"><img id="quickImage" src="images/products/product-placeholder.svg" alt="Product"></div>
+        <div class="quick-copy">
+          <div><span id="quickBadge" class="product-badge">FEATURED</span><p id="quickCategory" class="eyebrow">CATEGORY</p></div>
+          <h2 id="quickName">Product</h2>
+          <div class="quick-rating"><span id="quickStars">★★★★★</span><strong id="quickRating">0.0</strong><span id="quickBrand">Nova</span></div>
+          <p id="quickDescription">Product details</p>
+          <div class="quick-stock-line"><span>Live stock</span><strong id="quickStock">0 units</strong></div>
+          <div class="stock-meter"><i id="quickStockMeter"></i></div>
+          <div class="quick-buy"><strong id="quickPrice">$0.00</strong><div class="quantity-stepper"><button id="quickMinus" type="button">−</button><input id="quickQuantity" type="number" min="1" value="1"><button id="quickPlus" type="button">+</button></div></div>
+          <button id="quickAddBtn" class="btn btn-primary wide user-only" type="button">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

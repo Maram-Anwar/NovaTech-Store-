@@ -1,0 +1,32 @@
+NOVA TECH STORE - READY LOGIN ACCOUNTS
+======================================
+
+USER ACCOUNTS
+-------------
+1) testuser
+   Email: user@store.com
+   Password: test1234
+   Starting wallet: $1000
+
+2) maram
+   Email: maramanwar1026@gmail.com
+   Password: 123456789
+   Starting wallet: $560
+
+3) shimaa
+   Email: shimaauni422@gmail.com
+   Password: 1234567
+   Starting wallet: $9500
+
+ADMIN ACCOUNT
+-------------
+Username: admin
+Email: admin@gmail.com
+Password: 1234567
+
+NOTES
+-----
+- Passwords are stored in users.json/admins.json as SHA-256 hashes, not as these plain-text values.
+- The testuser password was standardized to test1234 so the supplied test account has a known working login.
+- Change/remove these test credentials before any public deployment.
+- You can create additional admins using setup_admin.bat or setup_admin.py.

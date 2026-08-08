@@ -1,0 +1,95 @@
+NOVA TECH STORE - PRODUCT IMAGE SOURCES
+========================================
+
+The primary catalog photos are sourced from Pexels product/technology photography.
+The original local SVG illustrations remain in the project as offline/error fallbacks.
+
+01. Laptop
+    https://www.pexels.com/photo/a-close-up-shot-of-a-laptop-on-a-white-background-10655906/
+
+02. Headphones
+    https://www.pexels.com/photo/black-wireless-headphones-15840650/
+
+03. Backpack
+    https://www.pexels.com/photo/person-holding-black-backpack-3731256/
+
+04. NovaBook Pro 15
+    https://www.pexels.com/photo/a-macbook-pro-laptop-on-white-table-8004044/
+
+05. NovaBook Flex 13
+    https://www.pexels.com/photo/switched-off-laptop-on-white-background-11982694/
+
+06. Nova Mini PC X1
+    https://www.pexels.com/photo/compact-desktop-computer-with-usb-c-and-ports-36065602/
+
+07. Nova Vision 24 Monitor
+    https://www.pexels.com/photo/computer-monitor-on-a-desk-in-an-office-21325135/
+
+08. Nova Vision 27 QHD
+    https://www.pexels.com/photo/computer-monitor-on-a-desk-19053211/
+
+09. Nova Pulse Buds
+    https://www.pexels.com/photo/close-up-of-wireless-earbuds-in-carrying-case-35599935/
+
+10. Nova SoundBar Mini
+    https://www.pexels.com/photo/black-speakers-in-close-up-shot-13378811/
+
+11. Nova Wave Speaker
+    https://www.pexels.com/photo/bluetooth-speaker-5511714/
+
+12. Nova Type Mechanical Keyboard
+    https://www.pexels.com/photo/a-person-using-a-computer-keyboard-7047246/
+
+13. Nova Type Mini 75
+    https://www.pexels.com/photo/photo-of-a-keyboard-12316450/
+
+14. Nova Glide Wireless Mouse
+    https://www.pexels.com/photo/photograph-of-a-black-wireless-mouse-13870516/
+
+15. Nova Dock 8-in-1
+    https://www.pexels.com/photo/usb-hub-type-c-dock-adapter-4195406/
+
+16. Nova Sleeve 14
+    https://www.pexels.com/photo/leather-laptop-sleeves-7742558/
+
+17. Nova GamePad X
+    https://www.pexels.com/photo/person-holding-a-sony-dualsense-video-game-controller-19115782/
+
+18. Nova Strike Mouse
+    https://www.pexels.com/photo/professional-gaming-mouse-and-rgb-computer-setup-34704932/
+
+19. Nova RGB Desk Mat
+    https://www.pexels.com/photo/rgb-gaming-keyboard-and-mouse-on-hexagon-pattern-28779689/
+
+20. Nova Phone Lite 5G
+    https://www.pexels.com/photo/smartphone-on-white-background-12882840/
+
+21. Nova Phone Pro 5G
+    https://www.pexels.com/photo/smartphone-on-white-background-25849099/
+
+22. Nova Watch Active
+    https://www.pexels.com/photo/photo-of-a-smartwatch-10339115/
+
+23. Nova Power 20K
+    https://www.pexels.com/photo/photo-of-black-power-bank-3921704/
+
+24. Nova GaN Charger 65W
+    https://www.pexels.com/photo/a-white-charger-with-a-plug-on-it-20360345/
+
+25. Nova SSD 1TB
+    https://www.pexels.com/photo/solid-state-drive-m-2-5222605/
+
+26. Nova USB Drive 128GB
+    https://www.pexels.com/photo/a-close-up-shot-of-an-otg-flash-drive-10336136/
+
+27. Nova Wi-Fi 6 Router
+    https://www.pexels.com/photo/smart-home-wireless-network-router-device-28348054/
+
+28. Nova Mesh Node
+    https://www.pexels.com/photo/close-up-photo-of-a-smart-speaker-13660566/
+
+29. Nova Smart Lamp
+    https://www.pexels.com/photo/modern-workspace-with-desk-lamp-and-monitor-31726764/
+
+30. Nova Smart Plug Duo
+    https://www.pexels.com/photo/smart-plug-electric-socket-4148576/

@@ -1,0 +1,52 @@
+NOVA TECH STORE v6 - IMPORTANT
+================================
+
+1) Extract this ZIP into a NEW EMPTY folder. Do not overwrite v2/v3.
+2) Double-click START_NOVA_STORE.bat.
+3) The correct URL is http://127.0.0.1:5055
+4) The login page must say: Secure connection established.
+
+EMAIL OTP
+---------
+Gmail is OPTIONAL for local development. If Gmail is not configured,
+the registration OTP appears only in the black Nova server window.
+To send real email OTP, run CONFIGURE_GMAIL_OTP.bat once, enter your Gmail
+and Gmail App Password, then restart START_NOVA_STORE.bat.
+
+NOVA TECH STORE - START HERE
+============================
+
+WINDOWS
+-------
+1. Extract the ZIP completely.
+2. DO NOT open index.html directly.
+3. Double-click: START_NOVA_STORE.bat
+4. Keep the black Python/server window OPEN.
+5. The correct website opens automatically from the backend URL.
+
+The login page now shows a Backend connected/offline indicator.
+If it says offline, the Python server is not running.
+
+READY ACCOUNTS
+--------------
+User:  user@store.com / test1234
+User:  maramanwar1026@gmail.com / 123456789
+User:  shimaauni422@gmail.com / 1234567
+Admin: admin@gmail.com / 1234567
+
+REGISTERING A NEW ACCOUNT
+-------------------------
+- If Gmail SMTP variables are configured, the OTP is sent by email.
+- If Gmail is NOT configured, the real backend prints the 6-digit OTP in
+  the black Nova server window. Enter that code on the website.
+- After verification, the account is saved permanently in users.json.
+
+DATA FILES USED BY THE SERVER
+-----------------------------
+users.json     = users + passwords hashes + wallet balances
+admins.json    = admin login data
+products.json  = products and stock
+carts.json     = saved carts
+
+Always edit/use the JSON files inside the same extracted folder as
+api_server.py. The backend reads those exact files.
