@@ -1,9 +1,4 @@
-const BACKEND_ORIGIN = (() => {
-  if (window.NOVA_API_ORIGIN) return String(window.NOVA_API_ORIGIN).replace(/\/$/, "");
-  if (location.protocol === "file:") return "http://127.0.0.1:5055";
-  if (location.port === "5055") return location.origin;
-  return `${location.protocol}//${location.hostname || "127.0.0.1"}:5055`;
-})();
+const BACKEND_ORIGIN = "https://maram10.pythonanywhere.com";
 
 const API = `${BACKEND_ORIGIN}/api`;
 const STORAGE = {
